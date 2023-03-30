@@ -33,18 +33,7 @@ def convert_neighbour(arr, i, j):
 
 
 def dfs(arr, i, j, visited, moves, n, m):
-    if arr[i][j] == 0:
-        return
-
-    arr[i][j] = 2
-    visited[i][j] = True
-
-    for move in moves:
-        i_next = i + move[0]
-        j_next = j + move[1]
-
-        if in_range(n, m, i_next, j_next) and not visited[i_next][j_next]:
-            dfs(arr, i_next, j_next, visited, moves, n, m)
+    # implement this function
 
 
 def in_range(n, m, i, j):
